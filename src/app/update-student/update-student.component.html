@@ -1,0 +1,27 @@
+<p>update-student works!</p>
+<div  style="width: 400px;">
+  <form  (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">EmailId</label>
+      <input type="text" class="form-control" id="emailId" required [(ngModel)]="student.emailId" name="emailId">
+    </div>
+
+    <div class="form-group">
+        <label for="name">MobileNo</label>
+        <input type="text" class="form-control" id="mobileNo" required [(ngModel)]="student.mobileNo" name="mobileNo">
+      </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+
